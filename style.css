@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  /* margin-top: 85px; */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 85.67px;
+  width: 100%;
+  border-bottom: thin solid black;
+  display: flex;
+  background-color: white;
+}
+
+.logo-and-sitename {
+  height: 100%;
+}
+
+.logo {
+  height: 85px;
+  width: 85px;
+  padding: 10px;
+  float: left;
+  border-right: thin solid black;
+  margin-right: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: AcademULight;
+  src: url(./font/AkademiDisplay-Ultralight.woff2);
+}
+
+@font-face {
+  font-family: ACSemiBold;
+  src: url(./font/AkademiText-Semibold.woff2);
+}
+
+@font-face {
+  font-family: ACRegular;
+  src: url(./font/AkademiDisplay-Regular.woff2);
+}
+
+@font-face {
+  font-family: ACExtraBold;
+  src: url(./font/AkademiText-Extrabold.woff2);
+}
+
+.slogan {
+  margin-top: 20px;
+  margin-right: 25px;
+  float: left;
+}
+
+.slogan p {
+  font-size: 50px;
+  font-family: AcademULight;
+  line-height: 50px;
+}
+
+.logo-secondary {
+  height: 85px;
+  padding: 9px;
+  float: left;
+  border-left: thin solid black;
+}
+
+.site-actions {
+  flex-grow: 1;
+  display: flex;
+  text-align: center;
+  height: 100%;
+  text-transform: uppercase;
+  font-family: ACSemiBold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-and-search {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  border-left: thin solid black;
+}
+
+.navigation {
+  padding: 32px 0 28px;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  transition: background-color 250ms ease;
+}
+
+.navigation:hover {
+  background-color: rgb(47, 6, 72);
+  color: white;
+}
+
+.navigation:hover .line {
+  border-bottom: thin solid white;
+  margin-bottom: 6px;
+}
+
+.menu-and-search .text {
+  font-size: 24px;
+}
+
+.icon {
+  width: 30px;
+  float: left;
+  margin: 3px 11px 0 0;
+}
+
+.text {
+  float: left;
+  font-family: ACRegular;
+  font-size: 24px;
+}
+
+.line {
+  width: 100%;
+  height: 0;
+  border-bottom: thin solid black;
+  margin-bottom: 6px;
+}
+
+.search {
+  width: 85px;
+  height: 100%;
+  font-weight: lighter;
+  border-left: thin solid black;
+}
+
+.search i {
+  margin-top: 26px;
+  font-size: 30px;
+  display: block;
+}
+
+.shortcuts {
+  height: 100%;
+  text-transform: uppercase;
+  border-left: thin solid black;
+}
+
+.shortcuts a {
+  display: block;
+}
+
+.department-college {
+  width: 100%;
+  border-bottom: thin solid black;
+  height: 42px;
+  padding: 0 24px;
+}
+
+.shortcuts span {
+  line-height: 40px;
+  font-size: 12px;
+  margin-top: 2px;
+  display: inline-block;
+}
+
+.recent-news {
+  padding: 0 24px;
+}
+
+.site-footer {
+  height: 298px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.logo-container {
+  width: 298px;
+  height: 100%;
+  padding: 20px;
+  border-top: thin solid black;
+}
+
+.logo-container a {
+  background-image: url(./images/rajagiri_logo.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+
+.footer-content-container {
+  flex: 1;
+  border-left: thin solid black;
+  float: left;
+}
+
+.contact-and-blog-container {
+  border-bottom: thin solid black;
+  width: 100%;
+  float: left;
+  border-top: thin solid black;
+}
+
+.contact-container {
+  width: 50%;
+  padding: 28px 34px;
+  float: left;
+  position: relative;
+  font-family: ACRegular;
+  font-size: 16px;
+}
+
+.contact-container .title {
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 15px;
+  font-family: ACSemiBold;
+}
+
+.address-info {
+  float: left;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  float: left;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.directions {
+  float: left;
+  width: 50%;
+}
+
+.assesibility {
+  float: left;
+  width: 50%;
+}
+
+.newsletter-container {
+  width: 50%;
+  float: left;
+  padding: 33px 34px 28px;
+}
+
+.news-label {
+  font-family: ACSemiBold;
+  margin-bottom: 14px;
+}
+
+.input-container {
+  display: flex;
+}
+
+.input-holder {
+  font-family: ACRegular;
+  color: rgba(0, 0, 0, 0.511);
+  padding-bottom: 7px;
+  border-bottom: thin solid black;
+  width: 200px;
+  margin-right: 30px;
+}
+
+.submit-btn {
+  text-transform: uppercase;
+  font-family: ACSemiBold;
+  border: thin solid orangered;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-and-social-container {
+  width: 100%;
+  height: 50%;
+  float: left;
+  font-family: ACRegular;
+}
+
+.info-and-social-container .bold {
+  font-family: ACExtraBold;
+  line-height: 22px;
+}
+
+.info-container {
+  width: 50%;
+  height: 100%;
+  padding: 28px 34px;
+  float: left;
+}
+
+.visitors {
+  float: left;
+  width: 30%;
+}
+
+.copyright {
+  float: left;
+  width: 30%;
+}
+
+.social-and-totop-container {
+  float: left;
+  width: 50%;
+  height: 100%;
+  border-left: thin solid black;
+}
+
+.social-container {
+  float: left;
+  width: calc(100% - 124px);
+  padding: 28px 34px;
+}
+
+.links {
+  font-size: 22px;
+  display: flex;
+}
+
+.links a {
+  display: block;
+  padding: 8px 6px;
+}
+
+.social-media-icon:hover {
+  color: rgb(47, 6, 72);
+}
+
+.totop-btn {
+  height: 100%;
+  width: 124px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-left: thin solid black;
+  border-bottom: thin solid black;
+}
+
+.totop-btn i {
+  display: block;
+  font-size: 32px;
+  font-weight: lighter;
+  margin-bottom: 2px;
+}
+
+.video-container {
+  border-radius: 38px;
+  overflow: hidden;
+  /* border: thin solid black; */
+}
+
+.video-container video {
+  object-fit: cover;
+  width: 100%;
+}
+
+.video-hero-section {
+  position: relative;
+  font-family: sans-serif;
+  padding: 28px 34px;
+  padding-top: 8px;
+}
+
+@font-face {
+  font-family: NMSemiBold;
+  src: url(./font/NeueMetanaNext-SemiBold.otf);
+}
+
+.video-hero-section .page-title {
+  font-size: 150px;
+  font-family: NMSemiBold;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  translate: -50% -50%;
+  color: white;
+  /* mix-blend-mode: color-dodge; */
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: NBPro;
+  src: url(./font/NBInternationalProBoo.woff2);
+}
+
+/* about section styles  */
+.about-section {
+  font-family: NBPro;
+  font-size: 54px;
+  font-weight: 500;
+  padding: 28px 34px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.about-sidetexts {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: thin solid black;
+  padding-bottom: 24px;
+}
+
+.events-section {
+  padding: 28px 34px;
+}
+
+@font-face {
+  font-family: ACBold;
+  src: url(./font/AkademiDisplay-Bold.woff2);
+}
+
+.topsection {
+  font-family: ACBold;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: thin solid black;
+}
+
+.see-all-btn {
+  font-size: 22px;
+  font-family: ACSemiBold;
+}
+
+.events-container {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 8px;
+  padding-top: 34px;
+  padding-bottom: 40px;
+  font-family: ACRegular;
+  font-size: 22px;
+}
+
+.events-card {
+  /* background-color: yellowgreen; */
+  width: 25%;
+  height: 330px;
+}
+
+.event-image-container {
+  height: 60%;
+  width: 100%;
+}
+
+.event-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 8px;
+}
+
+.event-info .date {
+  font-size: 16px;
+}
